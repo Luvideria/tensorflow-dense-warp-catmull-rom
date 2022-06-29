@@ -1,10 +1,10 @@
 # Dense Image Warp with Catmull-Rom interpolation
-Reimplementation of the dense image warp with catmull rom interpolation instead of bilinear. The use case can be motion vector reprojection, as the example below shows.
+Reimplementation of the dense image warp with catmull rom interpolation instead of bilinear. One use case can be motion vector reprojection, but really, catmull-rom has significantly nicer properties than bilinear.
 
 # Usage
 The file you're looking for is `dense_image_warp.py` and the function is `dense_image_warp_catmull( img, array_of_coordinates )`
 
-Use it the same way you use the bilinear version. It is a drop-in replacement for `tfa.image.dense_image_warp`
+Use it the same way you use the bilinear version. It is a drop-in replacement for the tensorflow function `tensorflow_addons.image.dense_image_warp`
 
 example of motion reprojection:
 
